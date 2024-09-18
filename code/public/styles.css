@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Adding transition */
+}
+
+button:hover {
+    background-color: #45a049;
+    /* Change color on hover */
+}
+
+button:active {
+    transform: translateY(2px);
+    /* Push the button down slightly when clicked */
+}
+
+#fitnessPlan {
+    margin-top: 20px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+fieldset legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}

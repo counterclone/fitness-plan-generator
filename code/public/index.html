@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Personalized Fitness Plans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Personalized Fitness Plans</h1>
+
+    <form id="fitnessForm">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" name="weight" required>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" name="height" required>
+
+        <label for="goal">Fitness Goal:</label>
+        <select id="goal" name="goal">
+            <option value="lose">Lose Weight</option>
+            <option value="maintain">Maintain Weight</option>
+            <option value="gain">Gain Muscle</option>
+        </select>
+
+        <fieldset>
+            <legend>Dietary Preferences</legend>
+            <input type="checkbox" id="vegetarian" name="diet" value="vegetarian">
+            <label for="vegetarian">Vegetarian</label>
+
+            <input type="checkbox" id="vegan" name="diet" value="vegan">
+            <label for="vegan">Vegan</label>
+
+            <input type="checkbox" id="glutenFree" name="diet" value="glutenFree">
+            <label for="glutenFree">Gluten Free</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Exercise Preferences</legend>
+            <input type="checkbox" id="cardio" name="exercise" value="cardio">
+            <label for="cardio">Cardio</label>
+
+            <input type="checkbox" id="strengthTraining" name="exercise" value="strengthTraining">
+            <label for="strengthTraining">Strength Training</label>
+
+            <input type="checkbox" id="yoga" name="exercise" value="yoga">
+            <label for="yoga">Yoga</label>
+        </fieldset>
+
+        <button type="submit">Generate Plan</button>
+    </form>
+
+    <div id="fitnessPlan"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
